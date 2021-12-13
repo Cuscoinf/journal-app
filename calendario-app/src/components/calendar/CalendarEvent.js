@@ -1,9 +1,11 @@
 import React from 'react'
 
-export const CalendarEvent = () => {
+export const CalendarEvent = ({event}) => {
+    const {title, user} = event
     return (
         <div>
-            <h1>CalendarEvent</h1>
+            <strong>{title}</strong>
+            <p> - {user.name} - </p>
         </div>
     )
 }
